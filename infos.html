@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="infos.css">
+    <title>Melhor Proteção</title>
+</head>
+
+<body>
+    <nav>
+        <img src="LOGO MELHOR PROTEÇÃO E MELHOR SAUDE VETORIZADA-10.png" alt="" srcset="">
+
+        <a href="index.html">Inicio</a>
+        <a href="infos.html">Informações para o associado</a>
+        <a href="area.html">Área do associado</a>
+    </nav>
+
+    <div class="topo">
+        <img src="LOGO MELHOR PROTEÇÃO E MELHOR SAUDE VETORIZADA-10.png" alt="" srcset="" class="logo-mobile">
+    
+        <div class="menu">
+          <div class="hamburger-icon"><img src="menuhamburguer.png" alt="" srcset=""></div>
+          
+          <div class="menu-dropdown">
+            <div onclick="redirectToLinkIndex()">Inicio</div>
+            <hr>
+            <div onclick="redirectToLinkInfos()">Informações para o associado</div>
+            <hr>
+            <div onclick="redirectToLinkArea()">Área do associado</div>
+          </div>
+      </div>
+    </div>
+
+    <main>
+        <div id="banner-inicio">
+            <div id="text-content">
+                <h1>INFORMAÇÕES <span>IMPORTANTES</span><br> PARA VOCÊ ASSOCIADO</h1>
+                <p>
+                    Para sanar suas dúvidas e explicar algumas<br>
+                    coisinhas que são muito relevantes para uma<br>
+                    boa experiencia conosco.
+                </p>
+            </div>
+
+            <img src="banner-infos.png" alt="" srcset="" id="banner3">
+        </div>
+
+        <div class="spacer1"></div> <!-- elemento de espaçamento -->
+
+        <div>
+            <img src="carro.png" alt="" srcset="" id="carro">
+        </div>
+
+        <div class="spacer"></div> <!-- elemento de espaçamento -->
+
+        <div id="banner-infos">
+
+            <!-- primeiro card -->
+            <div id="info1" onclick="mensagemUm()">
+                <div id="texto-botao1">
+                    <h3>Segunda via do boleto</h3>
+                </div>
+                <p>SAIBA MAIS</p>
+                <div id="texto1"></div>
+            </div>
+            <div id="fecharUm" onclick="fecharMensagemUm()" display="none"></div>
+
+            <!-- segundo card -->
+            <div id="info2" onclick="mensagemDois()">
+                <div id="texto-botao2">
+                    <h3>Como funciona o rateio (divisão) de despesas?</h3>
+                </div>
+                <p>SAIBA MAIS</p>
+                <div id="texto2"></div>
+            </div>
+            <div id="fecharDois" onclick="fecharMensagemDois()" display="none"></div>
+
+            <!-- terceiro card -->
+            <div id="info3" onclick="mensagemTres()">
+                <div id="texto-botao3">
+                    <h3>Já passou o prazo e minha inspeção prévia não foi realizada, o que faço?</h3>
+                </div>
+                <p>SAIBA MAIS</p>
+                <div id="texto3"></div>
+            </div>
+            <div id="fecharTres" onclick="fecharMensagemTres()" display="none"></div>
+
+            <!-- quarto card -->
+            <div id="info4" onclick="mensagemQuatro()">
+                <div id="texto-botao4">
+                    <h3>Preciso de um guincho, o que fazer?</h3>
+                </div>
+                <p>SAIBA MAIS</p>
+                <div id="texto4"></div>
+            </div>
+            <div id="fecharQuatro" onclick="fecharMensagemQuatro()" display="none"></div>
+
+            <!-- quinto card -->
+            <div id="info5" onclick="mensagemCinco()">
+                <div id="texto-botao5">
+                    <h3>Bati o carro, ou meu carro foi roubado, como devo proceder?</h3>
+                </div>
+                <p>SAIBA MAIS</p>
+                <div id="texto5"></div>
+            </div>
+            <div id="fecharCinco" onclick="fecharMensagemCinco()" display="none"></div>
+
+            <!-- sexto card -->
+            <div id="info6" onclick="mensagemSeis()">
+                <div id="texto-botao6">
+                    <h3>Oficinas</h3>
+                </div>
+                <p>SAIBA MAIS</p>
+                <div id="texto6"></div>
+            </div>
+            <div id="fecharSeis" onclick="fecharMensagemSeis()" display="none"></div>
+
+            <!-- setimo card -->
+            <div id="info7" onclick="mensagemSete()">
+                <div id="texto-botao7">
+                    <h3>Quero me desfiliar da associação, como devo fazer?</h3>
+                </div>
+                <p>SAIBA MAIS</p>
+                <div id="texto7"></div>
+            </div>
+            <div id="fecharSete" onclick="fecharMensagemSete()" display="none"></div>
+
+            <!-- oitavo card -->
+            <div id="info8" onclick="mensagemOito()">
+                <div id="texto-botao8">
+                    <h3>Meu carro é 0KM, precisa realizar a inspeção prévia?</h3>
+                </div>
+                <p>SAIBA MAIS</p>
+                <div id="texto8"></div>
+            </div>
+            <div id="fecharOito" onclick="fecharMensagemOito()" display="none"></div>
+
+            <!-- nono card -->
+            <div id="info9" onclick="mensagemNove()">
+                <div id="texto-botao9">
+                    <h3>Qualquer pessoa pode se associar?</h3>
+                </div>
+                <p>SAIBA MAIS</p>
+                <div id="texto9"></div>
+            </div>
+            <div id="fecharNove" onclick="fecharMensagemNove()" display="none"></div>
+
+            <!-- decimo card -->
+            <div id="info10" onclick="mensagemDez()">
+                <div id="texto-botao10">
+                    <h3>Emprestei meu carro e ele foi batido, tenho proteção?</h3>
+                </div>
+                <p>SAIBA MAIS</p>
+                <div id="texto10"></div>
+            </div>
+            <div id="fecharDez" onclick="fecharMensagemDez()" display="none"></div>
+
+            <!-- decimo primeiro card -->
+            <div id="info11" onclick="mensagemOnze()">
+                <div id="texto-botao11">
+                    <h3>Posso transferir para outro titular meu PAM?</h3>
+                </div>
+                <p>SAIBA MAIS</p>
+                <div id="texto11"></div>
+            </div>
+            <div id="fecharOnze" onclick="fecharMensagemOnze()" display="none"></div>
+
+            <!-- decimo segundo card -->
+            <div id="info12" onclick="mensagemDoze()">
+                <div id="texto-botao12">
+                    <h3>Troquei de carro, como faço para substituir meu veículo no PAM?</h3>
+                </div>
+                <p>SAIBA MAIS</p>
+                <div id="texto12"></div>
+            </div>
+            <div id="fecharDoze" onclick="fecharMensagemDoze()" display="none"></div>
+
+            <!-- decimo terceiro card -->
+            <div id="info13" onclick="mensagemTreze()">
+                <div id="texto-botao13">
+                    <h3>Meu carro foi recusado e ainda não recebi o ressarcimento do valor pago na adesão</h3>
+                </div>
+                <p>SAIBA MAIS</p>
+                <div id="texto13"></div>
+            </div>
+            <div id="fecharTreze" onclick="fecharMensagemTreze()" display="none"></div>
+
+            <!-- decimo quarto card -->
+            <div id="info14" onclick="mensagemQuatorze()">
+                <div id="texto-botao14">
+                    <h3>Nossa natureza jurídica</h3>
+                </div>
+                <p>SAIBA MAIS</p>
+                <div id="texto14"></div>
+            </div>
+            <div id="fecharQuatorze" onclick="fecharMensagemQuatorze()" display="none"></div>
+
+            <!-- decimo quinto card -->
+            <div id="info15" onclick="mensagemQuinze()">
+                <div id="texto-botao15">
+                    <h3>Não somos um seguro empresarial</h3>
+                </div>
+                <p>SAIBA MAIS</p>
+                <div id="texto15"></div>
+            </div>
+            <div id="fecharQuinze" onclick="fecharMensagemQuinze()" display="none"></div>
+
+            <!-- decimo sexto card -->
+            <div id="info16" onclick="mensagemDezesseis()">
+                <div id="texto-botao16">
+                    <h3>Qualquer pessoa pode participar da associação?</h3>
+                </div>
+                <p>SAIBA MAIS</p>
+                <div id="texto16"></div>
+            </div>
+            <div id="fecharDezesseis" onclick="fecharMensagemDezesseis()" display="none"></div>
+
+            <!-- decimo setimo card -->
+            <div id="info17" onclick="mensagemDezessete()">
+                <div id="texto-botao17">
+                    <h3>Como funciona o rateio de despesas?</h3>
+                </div>
+                <p>SAIBA MAIS</p>
+                <div id="texto17"></div>
+            </div>
+            <div id="fecharDezessete" onclick="fecharMensagemDezessete()" display="none"></div>
+
+        </div>
+    </main>
+    <script src="infos.js"></script>
+</body>
+<footer>
+    <ul>
+      <li><strong>CONTATOS</strong></li>
+      <li>(81)3094-9494 - Pernambuco</li>
+      <li>(84)99850-0094 - Rio Grande do Norte</li>
+    </ul>
+  
+    <ul>
+      <li><strong>ENDEREÇO</strong></li>
+      <li>Avenida Ayrton Senna da Silva, 120, Piedade - Jaboatão dos Guararapes/PE</li>
+    </ul>
+  
+    <ul>
+      <li><strong>REDES SOCIAIS</strong></li>
+      <li>Instagram - <a href="https://www.instagram.com/melhorprotecao/" target="_blank">@melhorprotecao</a></li>
+      <li>Facebook - <a href="https://www.facebook.com/melhorprotecaonordeste/?locale=pt_BR" target="_blank">Melhor Proteção Nordeste</a>
+      </li>
+    </ul>
+  
+    <ul>
+      <li><strong>REGULAMENTOS</strong></li>
+      <li><a href="https://drive.google.com/file/d/1TUUUBJQTynYHFC5ycOLClLJioZjROfxt/view?usp=sharing" target="_blank">Regulamento de carro</a></li>
+      <li><a href="https://drive.google.com/file/d/16o7bDdSolvY__lkx1HEvbkLLDX4QXKZS/view?usp=sharing" target="_blank">Regulamento de moto</a></li>
+      <li><a href="http://">Demais regulamentos</a></li>
+    </ul>
+  
+    <!-- <p>© 2023 Melhor Proteção. Todos os direitos reservados.</p>-->
+  
+  </footer>
+
+</html>

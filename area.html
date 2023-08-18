@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="area.css">
+    <title>Melhor Proteção</title>
+</head>
+<body>
+    <nav>
+        <img src="LOGO MELHOR PROTEÇÃO E MELHOR SAUDE VETORIZADA-10.png" alt="" srcset="">
+
+        <a href="index.html">Inicio</a>
+        <a href="infos.html">Informações para o associado</a>
+        <a href="area.html">Área do associado</a>
+    </nav>
+
+    <div class="topo">
+      <img src="LOGO MELHOR PROTEÇÃO E MELHOR SAUDE VETORIZADA-10.png" alt="" srcset="" class="logo-mobile">
+  
+      <div class="menu">
+        <div class="hamburger-icon"><img src="menuhamburguer.png" alt="" srcset=""></div>
+        
+        <div class="menu-dropdown">
+          <div onclick="redirectToLinkIndex()">Inicio</div>
+          <hr>
+          <div onclick="redirectToLinkInfos()">Informações para o associado</div>
+          <hr>
+          <div onclick="redirectToLinkArea()">Área do associado</div>
+        </div>
+    </div>
+  </div>
+
+    <main>
+        <div id="banner-inicio">
+            <img src="banner-area.png" alt="" srcset="" id="banner1">
+        </div>
+        <br>
+        <h1>ÁREA DO ASSOCIADO</h1>
+        <p>Em caso de problema, entre em contato.</p>
+        
+        <form action="https://melhor.veloxcontactcenter.com.br/ision/areaassociado" method="post"
+        target="_blank">
+
+        <h2>NOVO SISTEMA</h2>
+        <p>Caso você tenha se filiado <strong>a partir</strong> do dia 01/06/2023</p>
+        <h2>CPF</h2>
+        <br>
+        <input type="text" name="CpfCnpj" id="CpfCnpj">
+        <br>
+        <h2>SENHA</h2>
+        <br>
+        <input type="password" name="Senha" id="Senha">
+        <br>
+        <a href="javascript: window.location.href ='https://melhor.veloxcontactcenter.com.br/ision/AreaAssociado/RecuperaSenha' + '?CpfCnpj=' + document.getElementById('CpfCnpj').value" target="_blank" id="lembrar"> Lembrar senha </a>
+        <br>
+        <input type="submit" name="pbEntrar" value="ENTRAR" id="entrar">
+        </form>
+        <br>
+        <hr>
+        <form action="https://vega.hinova.com.br/sga/area/4.1/login.action.php" method="post" >
+          <h2>SISTEMA ANTIGO</h2>
+          <p>Caso você tenha se filiado <strong>antes</strong> do dia 01/06/2023</p>
+          <h2>CPF</h2>
+          <br>
+          <input type="text" name="dfsCpf" id="dfsCpf" >  
+          <h2>SENHA</h2>
+          <br>
+          <input type="password" name="dfsSenha" id="dfsSenha" >
+          <br>
+          <a href="https://vega.hinova.com.br/sga/area/4.1/lembrarSenha.php?chave=1fb7f7207645e5937f6dafb42f7c8fc481e611b25c4b631365da2b8e2eee2a2966614fee01e117680e831267381ad277b2d54ec8ed0043a4bd34adc2d945f368" target="_blank" id="lembrar-senha">Lembrar senha</a>
+          <input type="hidden" name="dfsChave" id="dfsChave" value="48850919bde1a8abc95f52adc217fe6fadd5f6a6fc46ce5199e1478afd9bd82aea8d2aaf4ec002250057e79a66760f99b5e2dacc6a2a8747dce193de372cd47a">     
+          <br>
+          <input type="submit" name="pbEntrar" value="ENTRAR" id="pbEntrar"> </form> 
+
+    </main>
+    
+    <script src="area.js"></script>
+</body>
+<footer>
+    <ul>
+      <li><strong>CONTATOS</strong></li>
+      <li>(81)3094-9494 - Pernambuco</li>
+      <li>(84)99850-0094 - Rio Grande do Norte</li>
+    </ul>
+  
+    <ul>
+      <li><strong>ENDEREÇO</strong></li>
+      <li>Avenida Ayrton Senna da Silva, 120, Piedade - Jaboatão dos Guararapes/PE</li>
+    </ul>
+  
+    <ul>
+      <li><strong>REDES SOCIAIS</strong></li>
+      <li>Instagram - <a href="https://www.instagram.com/melhorprotecao/" target="_blank">@melhorprotecao</a></li>
+      <li>Facebook - <a href="https://www.facebook.com/melhorprotecaonordeste/?locale=pt_BR" target="_blank">Melhor Proteção Nordeste</a>
+      </li>
+    </ul>
+  
+    <ul>
+      <li><strong>REGULAMENTOS</strong></li>
+      <li><a href="https://drive.google.com/file/d/1TUUUBJQTynYHFC5ycOLClLJioZjROfxt/view?usp=sharing" target="_blank">Regulamento de carro</a></li>
+      <li><a href="https://drive.google.com/file/d/16o7bDdSolvY__lkx1HEvbkLLDX4QXKZS/view?usp=sharing" target="_blank">Regulamento de moto</a></li>
+      <li><a href="http://">Demais regulamentos</a></li>
+    </ul>
+  
+    <!-- <p>© 2023 Melhor Proteção. Todos os direitos reservados.</p>-->
+  
+  </footer>
+</html>
